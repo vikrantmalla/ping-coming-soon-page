@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+/*Color */
+/*Primary Color */
+/*Secondary Color */
+/*Neutral Color */
+/*mixin */
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+.container .heading {
+  text-align: center;
+}
+
+.container .heading .title {
+  color: #969696;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 62em) {
+  .container .heading .title {
+    font-size: 3rem;
+  }
+}
+
+.container .heading span {
+  color: #151f29;
+  font-weight: 700;
+}
+
+.container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.container form input {
+  width: 85%;
+  border-radius: 2rem;
+  border: 1px solid #c2d3ff;
+  padding: 1rem 0.9rem;
+  outline: none;
+}
+
+@media (min-width: 62em) {
+  .container form input {
+    width: 60%;
+  }
+}
+
+.container form .notify_me {
+  border-radius: 2rem;
+  border: none;
+  background-color: #4f7df3;
+  color: #fff;
+  font-weight: 700;
+  -webkit-box-shadow: 0 5px 5px #c2d3ff;
+          box-shadow: 0 5px 5px #c2d3ff;
+  padding: 0.9rem;
+  outline: none;
+  width: 85%;
+  cursor: pointer;
+}
+
+@media (min-width: 62em) {
+  .container form .notify_me {
+    width: 30%;
+  }
+}
+
+@media (min-width: 62em) {
+  .container form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+  }
+}
+
+.container .illustration {
+  max-width: 100%;
+  margin: 3rem 0 5rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 62em) {
+  .container .illustration {
+    padding: 0;
+  }
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+footer .media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .media a {
+  text-decoration: none;
+}
+
+footer .media a i {
+  border: 0.06rem solid #c2d3ff;
+  border-radius: 50%;
+  color: #4f7df3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0.8rem;
+  height: 2rem;
+  width: 2rem;
+  font-size: 0.8rem;
+}
+
+footer .media a i:hover {
+  background-color: #4f7df3;
+  color: #fff;
+}
+
+@media (min-width: 62em) {
+  footer .media a i {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+footer .copy p {
+  font-size: 0.6rem;
+  color: #969696;
+}
+
+@media (min-width: 62em) {
+  footer .copy p {
+    font-size: 0.8rem;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  max-width: 650px;
+  margin: 60px auto;
+}
+
+img {
+  max-width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

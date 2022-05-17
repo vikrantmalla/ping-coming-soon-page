@@ -1,0 +1,38 @@
+footer {
+    @include flex(column, center);
+    gap: 1.5rem;
+    .media {
+        @include flex(row, center);
+        a {
+            text-decoration: none;
+            i {
+                border: 0.06rem solid $colorPaleBlue;
+                border-radius: 50%;
+                color: $colorBlue;
+                @include flex(row, center);
+                margin-right: 0.8rem;
+                height: 2rem;
+                width: 2rem;
+                font-size: 0.8rem;
+                &:hover {
+                    background-color: $colorBlue;
+                    color: #fff;
+                }
+                @media (min-width: 62em) {
+                    height: 2.5rem;
+                    width: 2.5rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .copy {
+        p {
+            font-size: 0.6rem;
+            color: $colorGray;
+            @media (min-width: 62em) {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

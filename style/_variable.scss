@@ -1,0 +1,25 @@
+/*Color */
+
+
+/*Primary Color */
+
+$colorBlue: hsl(223, 87%, 63%);
+
+/*Secondary Color */
+
+$colorPaleBlue: hsl(223, 100%, 88%);
+$colorLightRed: hsl(354, 100%, 66%);
+
+/*Neutral Color */
+
+$colorGray: hsl(0, 0%, 59%);
+$colorVeryDarkBlue: hsl(209, 33%, 12%);
+
+/*mixin */
+
+@mixin flex($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: center;
+}
