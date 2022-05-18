@@ -60,8 +60,13 @@
   width: 100%;
 }
 
-.container form input {
+.container form .form-control {
   width: 85%;
+  max-width: 100%;
+}
+
+.container form .form-control input {
+  width: 100%;
   border-radius: 2rem;
   border: 1px solid #c2d3ff;
   padding: 1rem 0.9rem;
@@ -69,9 +74,31 @@
 }
 
 @media (min-width: 62em) {
-  .container form input {
-    width: 60%;
+  .container form .form-control input {
+    width: 100%;
   }
+}
+
+.container form .form-control small {
+  margin-top: 0.5rem;
+  color: #ff5263;
+  text-align: center;
+  display: block;
+}
+
+@media (min-width: 62em) {
+  .container form .form-control small {
+    margin: 0.5rem 0 0 1rem;
+    text-align: left;
+  }
+}
+
+.container form .error input {
+  border: 1px solid #ff5263;
+}
+
+.container form .success small {
+  display: none;
 }
 
 .container form .notify_me {
@@ -91,6 +118,8 @@
 @media (min-width: 62em) {
   .container form .notify_me {
     width: 30%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 

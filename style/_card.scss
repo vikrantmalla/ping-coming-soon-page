@@ -20,14 +20,38 @@
         @include flex(column, center);
         gap: 1.5rem;
         width: 100%;
-        input {
+        .form-control {
             width: 85%;
-            border-radius: 2rem;
-            border: 1px solid $colorPaleBlue;
-            padding: 1rem 0.9rem;
-            outline: none;
-            @media (min-width: 62em) {
-                width: 60%;
+            max-width: 100%;
+            input {
+                width: 100%;
+                border-radius: 2rem;
+                border: 1px solid $colorPaleBlue;
+                padding: 1rem 0.9rem;
+                outline: none;
+                @media (min-width: 62em) {
+                    width: 100%;
+                }
+            }
+            small {
+                margin-top: 0.5rem;
+                color: $colorLightRed;
+                text-align: center;
+                display: block;
+                @media (min-width: 62em) {
+                    margin: 0.5rem 0 0 1rem;
+                    text-align: left;
+                }
+            }
+        }
+        .error {
+            input {
+                border: 1px solid $colorLightRed;
+            }
+        }
+        .success {
+            small {
+                display: none;
             }
         }
         .notify_me {
@@ -43,6 +67,7 @@
             cursor: pointer;
             @media (min-width: 62em) {
                 width: 30%;
+                align-self: flex-start;
             }
         }
         @media (min-width: 62em) {
