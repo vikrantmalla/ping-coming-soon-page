@@ -28,6 +28,7 @@
 .container .heading .title {
   color: #969696;
   font-weight: 300;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 
@@ -40,6 +41,16 @@
 .container .heading span {
   color: #151f29;
   font-weight: 700;
+}
+
+.container .heading p {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 62em) {
+  .container .heading p {
+    font-size: 1rem;
+  }
 }
 
 .container form {
@@ -84,6 +95,7 @@
   color: #ff5263;
   text-align: center;
   display: block;
+  visibility: hidden;
 }
 
 @media (min-width: 62em) {
@@ -97,8 +109,8 @@
   border: 1px solid #ff5263;
 }
 
-.container form .success small {
-  display: none;
+.container form .error small {
+  visibility: visible;
 }
 
 .container form .notify_me {

@@ -6,6 +6,7 @@
         .title {
             color: $colorGray;
             font-weight: 300;
+            font-size: 1.3rem;
             margin-bottom: 1rem;
             @media (min-width: 62em) {
                 font-size: 3rem;
@@ -14,6 +15,12 @@
         span {
             color: $colorVeryDarkBlue;
             font-weight: 700;
+        }
+        p {
+            font-size: 0.8rem;
+            @media (min-width: 62em) {
+                font-size: 1rem;
+            }
         }
     }
     form {
@@ -38,6 +45,7 @@
                 color: $colorLightRed;
                 text-align: center;
                 display: block;
+                visibility: hidden;
                 @media (min-width: 62em) {
                     margin: 0.5rem 0 0 1rem;
                     text-align: left;
@@ -48,10 +56,8 @@
             input {
                 border: 1px solid $colorLightRed;
             }
-        }
-        .success {
             small {
-                display: none;
+                visibility: visible;
             }
         }
         .notify_me {
